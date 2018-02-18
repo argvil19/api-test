@@ -17,4 +17,7 @@ module.exports = {
       : process.env.MONGO_URI,
   },
   logs: process.env.NODE_ENV === 'production' ? 'combined' : 'dev',
+  ffmpegPath: process.env.FFMPEG_DIR,
+  videoStoragePath: path.resolve('./') + '/storage/uploads',
+  subOutputPath: path.resolve('./') + '/storage/output'
 };
